@@ -26,7 +26,7 @@ contract Election {
     
     function Election(string _name, string candidate1, string candidate2) public {
         owner = msg.sender;
-        
+         
         name = _name;
         //initialize list of candidates to vote for
         candidates.push(Candidate(candidate1, 0));
