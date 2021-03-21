@@ -33,7 +33,7 @@ contract TimerAuction is BaseAuction, Withdrawable {
             //allow the beaten bidder to withdraw ether safely
             pendingWithdrawals[maxBidder] += maxBid;
         }
-
+ 
         maxBidder = msg.sender;
         maxBid = msg.value;
         BidAccepted(maxBidder, maxBid);
