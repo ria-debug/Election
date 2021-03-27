@@ -11,6 +11,7 @@ contract Election {
         uint voteCount;
     }
     
+    
     struct Voter {
         bool voted;
         uint vote;
